@@ -1,0 +1,41 @@
+#main-logo {
+  width: 100px;
+}
+#title {
+  text-shadow: 0px 0px 5px black;
+}
+body {
+  margin: 0;
+  color: #82a5ca;
+  text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+.hero {
+  background-image: url("https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTBkdjF5eXNsNWdrdGJzdWhyejVsbm9ia3Rwd3pkcXhybjU5eXpoYSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/iicDrNGWxHmDrIni6j/giphy.gif");
+  background-size: cover;
+  padding: 10px 0 40px 0;
+}
+.application {
+  padding: 10px 20px;
+  background-color: white;
+  color: #82a5ca;
+  font-weight: bolder;
+  border: none;
+  font-family: inherit;
+}
+@font-face {
+  font-family: "Corleone";
+  src: url("Corleone.ttf");
+}
+p {
+  font-family: "Corleone", sans-serif;
+  font-size: 24px;
+  font-weight: bolder;
+}
+.cta {
+  border-bottom: 4px solid white;
+  font-weight: bold;
+}

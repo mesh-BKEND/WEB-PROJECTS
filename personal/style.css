@@ -1,0 +1,102 @@
+body {
+  text-align: center;
+  color: #fc0fc0;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 24px;
+  box-shadow: 10px 10px 15px #333;
+  max-width: 900px;
+  margin: 20px auto;
+  align-items: center;
+  background: linear-gradient(black, #333);
+  color: white;
+  box-sizing: border-box;
+}
+.profile {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  color: black;
+  align-items: center;
+  gap: 24px;
+  font-weight: bolder;
+  font-size: 1rem;
+  padding: 10px 20px;
+  justify-content: space-around;
+  max-width: 800px;
+}
+#profile-picture {
+  border-radius: 10px;
+}
+.description {
+  padding: 18px 20px;
+  font-style: oblique;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: relative;
+}
+
+.description::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 15%;
+  bottom: 15%;
+  width: 3px;
+  background: linear-gradient(to bottom, transparent, white, transparent);
+}
+.description h2 {
+  text-shadow: 2px 2px 5px rgb(121, 182, 7);
+}
+.bio {
+  padding: 5px 10px;
+}
+.bio span {
+  color: #fc0fc0;
+}
+
+/*----socials-----*/
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+}
+
+.socials a {
+  border: 1px solid blue;
+  padding: 5px 12px;
+  margin-left: 15px;
+  text-decoration: none;
+  margin-bottom: 20px;
+  color: white;
+  border-radius: 10px;
+}
+.socials button {
+  background-color: black;
+  color: white;
+  margin-left: 5px;
+  padding: 5px 10px;
+  font-weight: bold;
+}
+.socials p {
+  margin-top: 24px;
+}
+@media (max-width: 650px) {
+  .profile {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .socials {
+    align-items: center;
+  }
+}

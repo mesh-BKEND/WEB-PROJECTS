@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  color: white;
+  padding: 20px;
+  background-color: #7b2cbf;
+}
+.plan-description {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-shadow: 5px 5px 4px rgba(3, 3, 3, 0.5);
+}
+.pricing {
+  display: flex;
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px 20px;
+  justify-content: space-around;
+  border-radius: 10px;
+  box-shadow:
+    5px 5px 10px rgba(0, 0, 0, 0.3),
+    -5px -5px 10px rgba(255, 255, 255, 0.3);
+  gap: 40px;
+}
+.child {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5%;
+  padding: 15px 25px;
+  font-weight: bold;
+  background-color: #6a15b4;
+  box-shadow:
+    4px 5px 6px rgba(0, 0, 0, 0.2),
+    -3px -3px 6px rgba(255, 255, 255, 0.2);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.child ul {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  list-style: circle;
+  margin-bottom: 25px;
+
+  padding: 10px 20px;
+}
+.child h3 {
+  font-size: 1.5rem;
+  font-style: oblique;
+}
+.buy {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: #000000;
+  box-shadow:
+    4px 5px 6px rgba(0, 0, 0, 0.2),
+    -3px -3px 6px rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+.buy:hover {
+  background-color: #150325;
+  box-shadow:
+    6px 7px 8px rgba(0, 0, 0, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+  margin-bottom: 5px;
+}
+.child:hover {
+  background: linear-gradient(90deg, #ffb3c1, #a4133c);
+  box-shadow:
+    6px 7px 8px rgba(0, 0, 0, 0.3),
+    -4px -4px 8px rgba(255, 255, 255, 0.3);
+  transform: translateY(-5px);
+  transition:
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.child::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: hsl(110, 100%, 65%);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: width 0.3s ease;
+}
+.child:hover::after {
+  width: 100%;
+}
