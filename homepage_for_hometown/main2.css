@@ -13,7 +13,7 @@ body {
   justify-content: space-between;
   position: relative;
   padding-bottom: 12px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 .hero-section::after {
   content: "";
@@ -87,8 +87,26 @@ body {
   justify-content: center;
   position: relative;
   overflow: hidden;
+  animation: bounce 2s infinite ease-in;
 }
 
+@keyframes bounce {
+  0% {
+    transfrom: translateY(0);
+  }
+
+  33% {
+    teansform: translateY(-20px);
+  }
+
+  66% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
 #section-two::before {
   content: "";
   position: absolute;
@@ -142,6 +160,20 @@ body {
   align-items: space-evenly;
   border-radius: 10px;
   justify-content: center;
+  animation: fade-in 2s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 50%;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.4;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 0.9;
+    transform: translateX(0);
+  }
 }
 .activity:hover {
   transform: translateY(-10px);
